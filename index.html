@@ -20,7 +20,7 @@
     <link href="css/admin/picker-custom.css" rel="stylesheet" />
     <link href="css/admin/select2-custom.css" rel="stylesheet">
     <link href="css/admin/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin/dashboard.css">
+    <link rel="stylesheet" href="css/admin/dashboard01.css">
        
 </head>
 <body>
@@ -45,7 +45,11 @@
                                 <ul aria-expanded="false">
                                     <li class="active">
                                         <span class="nav-thumbnail">01</span>
-                                        <a href="index-01.html">Default</a>
+                                        <a href="index-01.html">Birthday Challenge</a>
+                                    </li>
+                                    <li >
+                                        <span class="nav-thumbnail">02</span>
+                                        <a href="index-02.html">Feed A Child Challenge</a>
                                     </li>
                                 </ul>
                             </li><!--Menu-item-->
@@ -120,7 +124,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-3 mb-6 col-md-6 mb-30">
-                            <div class="list border1 rounded overflow-hidden">
+                            <div class="list border1 rounded overflow-hidden bg-white">
                                 <div class="list-item">
                                     <div class="list-thumb bg-primary text-primary-light avatar rounded-circle avatar60 shadow-sm">
                                         <i class="icon-Boy"></i>
@@ -133,7 +137,7 @@
                             </div>
                         </div><!--col-->
                         <div class="col-lg-3 mb-6 col-md-6 mb-30">
-                            <div class="list border1 rounded overflow-hidden">
+                            <div class="list border1 rounded overflow-hidden bg-white">
                                 <div class="list-item">
                                     <div class="list-thumb bg-warning-active text-warning-light avatar rounded-circle avatar60 shadow-sm">
                                         <i class="icon-Upload"></i>
@@ -147,7 +151,7 @@
                             </div>
                         </div><!--col-->
                         <div class="col-lg-3 mb-6 col-md-6  mb-30">
-                            <div class="list border1 rounded overflow-hidden">
+                            <div class="list border1 rounded overflow-hidden bg-white">
                                 <div class="list-item">
                                     <div class="list-thumb bg-success-active text-success-light avatar rounded-circle avatar60 shadow-sm">
                                         <i class="icon-Checked-User"></i>
@@ -161,7 +165,7 @@
                             </div>
                         </div><!--col-->
                         <div class="col-lg-3 mb-6 col-md-6 mb-30">
-                            <div class="list border1 rounded overflow-hidden">
+                            <div class="list border1 rounded overflow-hidden bg-white">
                                 <div class="list-item">
                                     <div class="list-thumb bg-danger-active text-danger-light avatar rounded-circle avatar60 shadow-sm">
                                         <i class="icon-Delete"></i>
@@ -275,10 +279,11 @@
                     
                     <div class="portlet-body no-padding">
 
-                        <div class="table-responsive">
+                        <div class="table-responsive bg-white">
                             <table class="table mb-0">
                                 <thead>
                                     <tr>
+                                        <th>Title</th>
                                         <th>Full Name</th>
                                         <th>Church</th>
                                         <th>Phone Number</th>
@@ -291,6 +296,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Sister</td>
                                         <td>Exampleson Tess</td>
                                         <td>CE Fifth Avenue</td>
                                         <td>09012345678</td>
@@ -308,6 +314,7 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Pastor</td>
                                         <td>Stephen  Bech</td>
                                         <td>CE Fifth Avenue</td>
                                         <td>09012345678</td>
@@ -325,6 +332,7 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Brother</td>
                                         <td>Stephen  Bech</td>
                                         <td>CE Fifth Avenue</td>
                                         <td>09012345678</td>
@@ -342,6 +350,7 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Deacon</td>
                                         <td>Stephen  Bech</td>
                                         <td>CE Fifth Avenue</td>
                                         <td>09012345678</td>
@@ -359,6 +368,7 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Deaconess</td>
                                         <td>Stephen  Bech</td>
                                         <td>CE Fifth Avenue</td>
                                         <td>09012345678</td>
@@ -376,6 +386,7 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Sister</td>
                                         <td>Stephen Bech</td>
                                         <td>CE Fifth Avenue</td>
                                         <td>09012345678</td>
@@ -393,6 +404,7 @@
                                         </td>
                                     </tr>
                                     <tr>
+                                        <td>Brother/td>
                                         <td>Stephen Bech</td>
                                         <td>CE Fifth Avenue</td>
                                         <td>09012345678</td>
@@ -419,36 +431,48 @@
                                     <div class="modal-dialog modal-dialog centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h4 class="modal-title text-center text-white">
-                                                    <ul>
-                                                        <i class="fas fa-long-arrow-alt-left"></i>
-                                                        <li>
-                                                            <a href="" class="text-white">Back to Dashboard</a>
-                                                        </li>
-                                                    </ul>
+                                                <h4 class="modal-title text-white">
+                                                    Content Rating
+                                                    <span class="close" data-dismiss="modal">&times;</span>
                                                 </h4>
+                                                
                                             </div>
-                                            <div class="modal-body">
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <img src="images/profile.png" alt="" width="50" height="50">
+                                            <div class="modal-body pl-5 pr-5">
+                                                <div class="row mb-3">
+                                                    <div class="col-md-12">
+                                                        <span>
+                                                            <img src="images/profile.png" alt="" width="60" height="60">
+                                                        </span>
+                                                        <span class="particpantName">Pastor Paul</span>
                                                     </div>
-                                                    <div class="col-md-8">
-                                                        <h3>Pastor Paul</h3>
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <video src="video/People in prison_TrueSouth.mp4" width="100%" controls></video>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h4>Rate Content</h4>
+                                                        <div class="slidecontainer">
+                                                            <input type="range" min="0" max="100" value="0" class="slider" id="Range">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h6>Rating: <span id="Output"></span>%</h6>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <span class="fa fa-star" id="star1"></span>
+                                                        <span class="fa fa-star" id="star2"></span>
+                                                        <span class="fa fa-star" id="star3"></span>
+                                                        <span class="fa fa-star" id="star4"></span>
+                                                        <span class="fa fa-star" id="star5"></span>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-md-8">
-                                                            <video src="video/People in prison_TrueSouth.mp4" width="100%"></video>
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-outline-success btn-block"  width="100%">Approve</button>
                                                         </div>
-                                                        <div class="col-md-4">
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <button class="btn btn-outline-success btn-block"  width="100%">Approve</button>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <button class="btn btn-outline-danger btn-block" width="100%">Decline</button>
-                                                            </div>
+                                                        <div class="col-md-6">
+                                                            <button class="btn btn-outline-danger btn-block" width="100%">Decline</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -486,6 +510,7 @@
     <script type="text/javascript" src="lib/peity/jquery.peity.min.js"></script>
     <script type="text/javascript" src="lib/dt-picker/jquery.datetimepicker.full.min.js"></script>
     <script src="lib/select2/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="js/admin/dashboard01.js"></script>
     <script type="text/javascript" src="js/admin/dashboard02-custom.js"></script>  
 </body>
 </html>
