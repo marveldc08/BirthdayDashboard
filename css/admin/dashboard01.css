@@ -1,0 +1,63 @@
+.fa-check-circle{
+    font-size: small;
+    color: green;
+}
+.fa-times-circle{
+    font-size: small;
+    color: red;
+}
+.fa-ban{
+    font-size: small;
+    color: gray;
+}
+.lni-close{
+    
+    font-size: 5px;
+}
+.modal-header{
+    background-color: rgb(29, 29, 105);
+}
+.modal-title{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+/*Rating Slide*/
+.slidecontainer{
+    width: 100%;
+}
+.slider{
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    outline: none;
+    background: #686767;
+    transition: opacity .2s;
+}
+.slider:hover{
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb{
+appearance: none;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+cursor: pointer;
+background: rgb(29, 29, 105);
+}
+.close{
+    font-size: 23px;
+    color: white;
+}
+.particpantName{
+    font-size: 30px;
+}
+.checked{
+    color: orange;
+}
+.unchecked{
+    color: #3A4472;
+}
