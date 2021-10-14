@@ -49,15 +49,21 @@ cursor: pointer;
 background: rgb(29, 29, 105);
 }
 .close{
-    font-size: 23px;
+    font-size: 36px;
+    color: white;
+}
+.close:hover{
     color: white;
 }
 .particpantName{
-    font-size: 30px;
+    font-size: 25px;
 }
 .checked{
     color: orange;
 }
 .unchecked{
-    color: #3A4472;
+    color: gray;
+}
+.hide{
+    display: none;
 }
