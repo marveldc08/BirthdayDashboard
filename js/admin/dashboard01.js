@@ -212,7 +212,7 @@ function highlight_row() {
                 slider.oninput = function(){
                     valueOutput.innerHTML = this.value;
                      rating.textContent = slider.value + "%";
-                
+                     
                      //add color to stars
                     if(slider.value <= 19){
                         star1.classList.remove('checked'); 
