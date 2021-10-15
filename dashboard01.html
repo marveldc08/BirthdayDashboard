@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap-->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Common Plugins CSS -->
+    <link href="css/admin/plugins/plugins.css" rel="stylesheet">
+    <!--fonts-->
+    <link href="lib/line-icons/line-icons.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="lib/dt-picker/jquery.datetimepicker.min.css" rel="stylesheet">
+    <link href="lib/select2/dist/css/select2.min.css" rel="stylesheet">
+    <link href="lib/chartist/chartist.min.css" rel="stylesheet" />
+    <link href="css/admin/chartist-custom.css" rel="stylesheet" />
+    <link href="css/admin/picker-custom.css" rel="stylesheet" />
+    <link href="css/admin/select2-custom.css" rel="stylesheet">
+    <link href="css/admin/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin/dashboard01.css">
+       
+</head>
+<body>
+
+    <div class="page-wrapper" id="page-wrapper">
+        <aside id="page-aside" class=" page-aside">
+            <div class="sidenav whiteNav">
+                <a href="index.html" class="app-logo d-flex flex flex-row align-items-center overflow-hidden justify-content-center">
+                    <i class="icon-Paper-Plane inline-icon rounded avatar32 d-inline-flex align-items-center justify-content-center"></i>
+                    <span class="logo-text d-inline-flex" style="font-size: small;" > <span class='font700 d-inline-block mr-1'>New Media</span> technologies </span>
+                </a>
+                <div class="flex">
+                    <div class="aside-content">
+                        <ul class="metisMenu" id="metisMenu">
+                            <li class="nav-title">Main<span class="nav-thumbnail">MN</span></li>
+                            <li class="active"> <i class="icon-Gaugage nav-thumbnail"></i>
+                                <a class="has-arrow" href="javascript:void(0)">
+                                    <span class="nav-text">
+                                        Dashboard 
+                                    </span>
+                                </a>
+                                <ul aria-expanded="false">
+                                    <li class="active">
+                                        <span class="nav-thumbnail">01</span>
+                                        <a href="index-01.html">Birthday Challenge</a>
+                                    </li>
+                                    <li >
+                                        <span class="nav-thumbnail">02</span>
+                                        <a href="dashboard02.html">Feed A Child Challenge</a>
+                                    </li>
+                                </ul>
+                            </li><!--Menu-item-->
+                        </ul>
+                    </div><!-- aside content end-->
+                </div><!-- aside hidden scroll end-->
+                <div class="aside-footer p-3 pl-25">
+                    <div class="">
+                        App Version - 1.0
+                    </div>
+                </div><!-- aside footer end-->
+            </div><!-- sidenav end-->
+        </aside><!-- page-aside end-->
+        <main class="content">
+            <header class="navbar page-header darkHeader navbar-expand-lg">
+                <ul class="nav flex-row mr-auto">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link sidenav-btn h-lg-down">
+                            <span class="navbar-toggler-icon"></span>
+                        </a>
+                        <a class="nav-link sidenav-btn h-lg-up" href="#page-aside"  data-toggle="dropdown" data-target="#page-aside">
+                            <span class="navbar-toggler-icon"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav flex-row order-lg-2 ml-auto nav-icons">
+
+                    <li class="nav-item dropdown user-dropdown align-items-right">
+                        <a class="nav-link" href="#" id="dropdown-user" role="button" data-toggle="dropdown">
+                            <span class="user-states states-online">
+                                <img src="images/avatar6.jpg" width="35" alt="" class=" img-fluid rounded-circle">
+                            </span>
+                            <span class="ml-2 h-lg-down dropdown-toggle">
+                                Hi, Sarah
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                            <div class="text-center p-3 pt-0 b-b mb-5">
+                                <span class="mb-0 d-block font300 text-title">Hi! 
+                                    <span class="font700">Sarah Taylor</span>
+                                </span>
+                                <span class="fs12 mb-0 text-muted">Administrator</span>
+                            </div>
+                            
+                            <a class="dropdown-item" href="page-login.html"><i class="icon-Power"></i> logout</a>
+
+                        </div>
+                    </li>
+                    <li class="h-lg-up nav-item">
+                        <a href="#" class=" nav-link collapsed" data-toggle="collapse" data-target="#navbarToggler" aria-expanded="false">
+                            <i class="icon-Magnifi-Glass2"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="collapse navbar-collapse search-collapse" id="navbarToggler">
+                    <form class="form-inline ml-1">     
+                        <button class="no-padding bg-trans border0" type="button"><i class="icon-Magnifi-Glass2"></i></button>
+                        <input class="form-control border0" type="search" placeholder="Search..." aria-label="Search">
+                    </form>
+                </div>
+            </header>
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row align-items-center mb-30 pt-30">
+                        <div class="col-md-12 mr-auto ml-auto">
+                            <div class="mb-0">
+                                <!--<a href='#' class='float-right btn btn-sm btn-info btn-icon'><i class="fa fa-cog mr-2"></i>View Settings</a>-->
+                                <h4>Welcome back,<b> Sarah</b></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-lg-3 mb-6 col-md-6 mb-30">
+                            <div class="list border1 rounded overflow-hidden bg-white">
+                                <div class="list-item">
+                                    <div class="list-thumb bg-primary text-primary-light avatar rounded-circle avatar60 shadow-sm">
+                                        <i class="icon-Boy"></i>
+                                    </div>
+                                    <div class="list-body text-right">
+                                        <span class="list-title fs-2x">4598</span>
+                                        <span class="list-content fs14">Participant</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        
+                        <div class="col-lg-6 mb-6 col-md-6 mb-30">
+                            <div class="list border1 rounded overflow-hidden bg-white">
+                                <div class="list-item">
+                                    <div class="list-thumb bg-warning-active text-warning-light avatar rounded-circle avatar60 shadow-sm">
+                                        <i class="icon-Upload"></i>
+                                    </div>
+                                    <div class="list-body text-right">
+                                        <span class="list-title fs-2x">753</span>
+                                        <span class="list-content  fs14">Total Uploads</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--col-->
+                       
+                        <div class="col-lg-6 mb-6 col-md-6  mb-30">
+                            <div class="list border1 rounded overflow-hidden bg-white">
+                                <div class="list-item">
+                                    <div class="list-thumb bg-success-active text-success-light avatar rounded-circle avatar60 shadow-sm">
+                                        <i class="icon-Checked-User"></i>
+                                    </div>
+                                    <div class="list-body text-right">
+                                        <span class="list-title fs-2x">6830</span>
+                                        <span class="list-content fs14">Approved </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--col-->
+                        <!-- <div class="col-lg-3 mb-6 col-md-6 mb-30">
+                            <div class="list border1 rounded overflow-hidden bg-white">
+                                <div class="list-item">
+                                    <div class="list-thumb bg-danger-active text-danger-light avatar rounded-circle avatar60 shadow-sm">
+                                        <i class="icon-Delete"></i>
+                                        <i class="lni lni-close"></i>
+                                    </div>
+                                    <div class="list-body text-right">
+                                        <span class="list-title fs-2x">78</span>
+                                        <span class="list-content  fs14">Declined</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="row" hidden>
+                        <div class="col-lg-8">
+                            <div class="portlet-box bg-trans  mb-30">
+                                <div class="portlet-header bg-light flex-row b-b flex d-flex align-items-center">
+                                    <div class="flex d-flex flex-column">
+                                        <h3>Recent Earnings</h3> 
+                                    </div>
+                                    <div class="portlet-tools">
+                                        <ul class="nav">
+
+                                            <li class="nav-item">
+                                                <a href="#" class="nav-link"><i class="fa fa-sync"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!--header-->
+                                <div class="portlet-body">
+                                     <div class="nav pb-3">
+                                         <span class="pr-2 pt-2"><i class="fa fa-filter mr-2 text-muted"></i>Filter Earnings</span>
+                                            <div class="nav-item p-1">
+                                                <input placeholder="From" type="text" class="form-control" id="date_timepicker_start">
+                                            </div>
+                                            <div class="nav-item p-1">
+                                                <input placeholder="To" type="text" class="form-control" id="date_timepicker_end">
+                                            </div>
+                                        </div>
+                                    <div class='chartist'>
+                                <div style="height: 300px;" class="ct-chart"></div>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-30">
+                            <div class=" p-3  flex full-height rounded border1">
+                                <span class="b-b fs-1x font500 mb-3 d-block pb-3">Recent Activities</span>
+                            <ul class="timeline-alt list-unstyled">
+                                <li class="clearfix d-flex flex">
+                                    <div class="tl-thumb bg-primary text-primary-light fs10 font600 rounded-circle">
+                                        <i class="fa fa-comments"></i>
+                                    </div>
+                                    <div class="tl-content">
+                                        <span class="text-muted float-right fs12 d-inline-block">12 Min ago</span>
+                                        <a href="#">
+                                            <span>New Message</span>
+                                        </a> 
+                                        <p>
+                                            Sent you friend request
+                                        </p>
+                                    </div>
+
+                                </li><!-- timeline item-->
+                                <li class="clearfix d-flex flex">
+                                    <div class="tl-thumb rounded-circle">
+                                        <img src="images/avatar2.jpg" alt="" class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="tl-content">
+                                            <span class="text-muted float-right fs12 d-inline-block">12 Min ago</span>
+                                        <a href="#">
+                                            <span>Replace these images with current home slider </span>
+                                        </a> 
+                                    </div>
+                                </li><!-- timeline item-->
+                                <li class="clearfix d-flex flex">
+                                    <div class="tl-thumb si-colored-facebook rounded-circle">
+                                        <i class="fab fa-facebook-f fs10"></i>
+                                    </div>
+                                    <div class="tl-content">
+                                        <span class="text-muted float-right fs12 d-inline-block">12 Min ago</span>
+                                        <a href="#">
+                                            <span>New Friend Request</span>
+                                        </a> 
+                                        <p class="mb-0">
+                                            Sent you friend request
+                                        </p>
+                                    </div>
+
+                                </li><!-- timeline item-->
+                                <li class='clearfix d-flex flex text-right'>
+                                    <a href='#' class='btn btn-sm btn-primary'>View All</a>
+                                </li>
+                            </ul>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row align-items-center mb-20 pt-10">
+                        <!--
+                        <div class="col-md-12 mr-auto ml-auto">
+                            <div class="mb-2">
+                                <a href='#' class='float-right btn btn-sm btn-outline-primary btn-icon' >
+                                    End Meeting <i class="icon-Power "></i>
+                                </a>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                    
+                    <div class="portlet-body no-padding">
+
+                        <div class="table-responsive bg-white">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Full Name</th>
+                                        <th>Church</th>
+                                        <th>Phone Number</th>
+                                        <th>Content Type</th>
+                                        <th>Date</th>
+                                        <th>Rating</th>
+                                        <th>Status</th>
+                                        <th>View Content</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="tr1" class="tr1">
+                                        <td id="title1" class="title">Sister</td>
+                                        <td id="name1">Exampleson Tess</td>
+                                        <td id="church1">CE Fifth Avenue</td>
+                                        <td id="phone1">09012345678</td>
+                                        <td id="content1">Audio</td>
+                                        <td id="date1">Thusrday 24th 12:23pm</td>
+                                        <td id="td1"></td>
+                                        <td id="status1">
+                                            Pending 
+                                            <span>
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary tableBtn"data-toggle="modal" data-target="#contentModal" id="btn1" >View</button>
+                                        </td>
+                                    </tr>
+                                    <tr id="tr2">
+                                        <td id="title2">Pastor</td>
+                                        <td id="name2">Stephen  Bech</td>
+                                        <td id="church2">CE Alasia</td>
+                                        <td id="phone2">09012335678</td>
+                                        <td id="content2"> Video</td>
+                                        <td id="date2">Monday 14th 3:00pm</td>
+                                        <td id="td2"></td>
+                                        <td id="status2">
+                                            Pending 
+                                            <span>
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary tableBtn" data-toggle="modal" data-target="#contentModal" id="btn2" >View</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="title3">Brother</td>
+                                        <td id="name3">Samson Total</td>
+                                        <td id="church3">CE Abebi</td>
+                                        <td id="phone3">09012345678</td>
+                                        <td id="content3">Audio</td>
+                                        <td id="date3">Friday 12th 9:26am</td>
+                                        <td id="td3"></td>
+                                        <td id="status3">
+                                            Pending 
+                                            <span>
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary tableBtn" data-toggle="modal" data-target="#contentModal"id="btn3">View</button>
+                                        </td>
+                                    </tr>
+                                    <tr id="tr4">
+                                        <td id="title4">Deacon</td>
+                                        <td id="name4">Brenda Thomason</td>
+                                        <td id="church4">CE Central Church</td>
+                                        <td id="phone4">09012345678</td>
+                                        <td id="content4">Video</td>
+                                        <td id="data4">Thusrday 14th 11:23pm</td>
+                                        <td id="td4"></td>
+                                        <td id="status4">
+                                            Pending 
+                                            <span>
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary tableBtn" data-toggle="modal" data-target="#contentModal" id="btn4">View</button>
+                                        </td>
+                                    </tr>
+                                    <tr id="tr5">
+                                        <td id="title5">Deaconess</td>
+                                        <td id="name5">Peace Benson</td>
+                                        <td id="church5">CE  Casso</td>
+                                        <td id="phone5">09012345678</td>
+                                        <td id="content5">Audio</td>
+                                        <td id="date5">Thusrday 24th 12:23pm</td>
+                                        <td id="td5"></td>
+                                        <td id="status5">
+                                            Pending 
+                                            <span>
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary tableBtn" data-toggle="modal" data-target="#contentModal"id="btn5">View</button>
+                                        </td>
+                                    </tr>
+                                    <tr id="tr6">
+                                        <td id="title6">Sister</td>
+                                        <td id="name6">Jane Bech</td>
+                                        <td id="church6">CE New Estate</td>
+                                        <td id="phone6">09012345678</td>
+                                        <td id="content6">Audio</td>
+                                        <td id="date6">Wednesday 10th 7:00pm</td>
+                                        <td id="td6"></td>
+                                        <td id="status6">
+                                            Pending 
+                                            <span>
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary tableBtn" data-toggle="modal" data-target="#contentModal" id="btn6" >View</button>
+                                        </td>
+                                    </tr>
+                                    <tr id="tr7">
+                                        <td id="title7">Brother</td>
+                                        <td id="name7">Chidi Stephen</td>
+                                        <td id="church7">CE AIT</td>
+                                        <td id="phone7">09012345678</td>
+                                        <td id="content7">Video</td>
+                                        <td id="date7">Satruday 19th 12:00am</td>
+                                        <td id="td7"></td>
+                                        <td id="status7">
+                                            Pending 
+                                            <span>
+                                                <i class="fa fa-ban"></i>
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary tableBtn" data-toggle="modal" data-target="#contentModal" id="btn7">View</button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+
+                            <!--modal section-->
+                            <section id="modal-section">
+                                <div class="modal fade" id="contentModal">
+                                    <div class="modal-dialog modal-dialog centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                 <h4 class="modal-title text-white">
+                                                    Content Rating
+                                                </h4> 
+                                                <span class="close" data-dismiss="modal">&times;</span>
+                                            </div>
+                                            <div class="modal-body pl-5 pr-5">
+                                                <div class="row" >
+                                                    <div class="col-md-2">
+                                                        <span>
+                                                            <img src="images/profile.png" alt="" width="60" height="60">
+                                                        </span>
+                                                        
+                                                    </div>
+                                                    <div class="col-md-10">
+                                                        <div class="nameChurch">
+                                                            <span class="particpantName" id="modalName"></span>
+                                                            <p >From <span id="modalChurch"></span></p>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12 contain">
+                                                        <video src="video/People in prison_TrueSouth.mp4" width="100%" controls></video>
+                                                        <audio src="audio/Blanca - Who I am.mp3" class="hide" controls></audio>
+                                                        <p>Birthday Challenge <span id="contentType"></span></p>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <h5>Rate Content</h5>
+                                                        <div class="slidecontainer">
+                                                            <input type="range" min="0" max="100" value="0" class="slider" id="Range">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h6>Rating: <span id="Output"></span>%</h6>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <span class="fa fa-star" id="star1"></span>
+                                                        <span class="fa fa-star" id="star2"></span>
+                                                        <span class="fa fa-star" id="star3"></span>
+                                                        <span class="fa fa-star" id="star4"></span>
+                                                        <span class="fa fa-star" id="star5"></span>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 ml-2 mt-4 mb-4">
+                                                            <button class="btn btn-outline-success btn-lg" id="approveBtn"><i class="fa fa-check"></i> Approve</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div><!--portlet-->
+            </div><!--col-->
+    </div>
+                </div>
+            </div>
+        </main><!-- page content end-->
+    </div><!-- app's main wrapper end -->
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/admin/plugins/plugins.js"></script> 
+    <script type="text/javascript" src="js/admin/appUi-custom.js"></script> 
+     <script src="lib/chartist/chartist.min.js"></script>
+    <script src="lib/chartist/chartist-tooltip.js"></script>
+    <script type="text/javascript" src="lib/peity/jquery.peity.min.js"></script>
+    <script type="text/javascript" src="lib/dt-picker/jquery.datetimepicker.full.min.js"></script>
+    <script src="lib/select2/dist/js/select2.min.js"></script>
+    <script type="text/javascript" src="js/admin/dashboard01.js"></script>
+    <script type="text/javascript" src="js/admin/dashboard02-custom.js"></script>  
+</body>
+</html>
