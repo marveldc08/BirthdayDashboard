@@ -49,7 +49,7 @@
                                     </li>
                                     <li >
                                         <span class="nav-thumbnail">02</span>
-                                        <a href="index-02.html">Feed A Child Challenge</a>
+                                        <a href="dashboard02.html">Feed A Child Challenge</a>
                                     </li>
                                 </ul>
                             </li><!--Menu-item-->
@@ -324,9 +324,9 @@
                                         <td id="date2">Monday 14th 3:00pm</td>
                                         <td id="td2"></td>
                                         <td id="status2">
-                                            Approved 
+                                            Pending 
                                             <span>
-                                                <i class="fa fa-check-circle"></i>
+                                                <i class="fa fa-ban"></i>
                                             </span>
                                         </td>
                                         <td>
@@ -342,9 +342,9 @@
                                         <td id="date3">Friday 12th 9:26am</td>
                                         <td id="td3"></td>
                                         <td id="status3">
-                                            Approved 
+                                            Pending 
                                             <span>
-                                                <i class="fa fa-check-circle"></i>
+                                                <i class="fa fa-ban"></i>
                                             </span>
                                         </td>
                                         <td>
@@ -360,9 +360,9 @@
                                         <td id="data4">Thusrday 14th 11:23pm</td>
                                         <td id="td4"></td>
                                         <td id="status4">
-                                            Approved 
+                                            Pending 
                                             <span>
-                                                <i class="fa fa-check-circle"></i>
+                                                <i class="fa fa-ban"></i>
                                             </span>
                                         </td>
                                         <td>
@@ -378,9 +378,9 @@
                                         <td id="date5">Thusrday 24th 12:23pm</td>
                                         <td id="td5"></td>
                                         <td id="status5">
-                                            Declined 
+                                            Pending 
                                             <span>
-                                                <i class="fa fa-times-circle"></i>
+                                                <i class="fa fa-ban"></i>
                                             </span>
                                         </td>
                                         <td>
@@ -433,29 +433,31 @@
                                     <div class="modal-dialog modal-dialog centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h4 class="modal-title text-white">
+                                                 <h4 class="modal-title text-white">
                                                     Content Rating
-                                                    <span class="close" data-dismiss="modal">&times;</span>
-                                                </h4>
-                                                
+                                                </h4> 
+                                                <span class="close" data-dismiss="modal">&times;</span>
                                             </div>
                                             <div class="modal-body pl-5 pr-5">
-                                                <div class="row">
-                                                    <div class="col-md-12">
+                                                <div class="row" >
+                                                    <div class="col-md-2">
                                                         <span>
                                                             <img src="images/profile.png" alt="" width="60" height="60">
                                                         </span>
-                                                        <span class="particpantName" id="modalName"></span>
+                                                        
                                                     </div>
-                                                    <div class="col-md-12">
-                                                        <p>From <span id="modalChurch"></span></p>
+                                                    <div class="col-md-10">
+                                                        <div class="nameChurch">
+                                                            <span class="particpantName" id="modalName"></span>
+                                                            <p >From <span id="modalChurch"></span></p>
+                                                        </div>
                                                     </div>
                                                     
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12 contain">
                                                         <video src="video/People in prison_TrueSouth.mp4" width="100%" controls></video>
-                                                        <audio src="video/Blanca - Who I am.mp3" class="hide" controls></audio>
+                                                        <audio src="audio/Blanca - Who I am.mp3" class="hide" controls></audio>
                                                         <p>Birthday Challenge <span id="contentType"></span></p>
                                                     </div>
                                                     <div class="col-md-12">
@@ -476,7 +478,7 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6 ml-2 mt-4 mb-4">
-                                                            <button class="btn btn-outline-success btn-lg" >Approve</button>
+                                                            <button class="btn btn-outline-success btn-lg" id="approveBtn"><i class="fa fa-check"></i> Approve</button>
                                                         </div>
                                                     </div>
                                                 </div>
