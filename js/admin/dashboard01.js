@@ -79,11 +79,18 @@ valueOutput.innerHTML= slider.value;
 
                     //add color to stars
                     if(slider.value <= 19){
+
                         star1.classList.remove('checked'); 
                         star2.classList.remove('checked');
                         star3.classList.remove('checked');
                         star4.classList.remove('checked');
                         star5.classList.remove('checked');
+
+                        star1.classList.remove('unchecked'); 
+                        star2.classList.remove('unchecked');
+                        star3.classList.remove('unchecked');
+                        star4.classList.remove('unchecked');
+                        star5.classList.remove('unchecked');
                     } else if(slider.value === 20 || slider.value < 40 ){
                         star1.classList.add('checked'); 
                         star2.classList.remove('checked');
@@ -127,24 +134,14 @@ valueOutput.innerHTML= slider.value;
                   star3.classList.remove('checked');
                   star4.classList.remove('checked');
                   star5.classList.remove('checked');
-                    let iconClass= 'fa fa-checked-circle';
-                   let icon = `<span>
-                                    <i class = '${iconClass}' ></i>
-                               </span>`;
-                   status.textContent = "Approved";
-                   status.appendChild(icon); 
-
-
-
-                   /* let span = document.createElement('span');
-                   let i = document.createElement('i');
-                  // i.classList.add('fa');
-                   i.classList.add('fafa-checked-circle')
-                   icon = span.appendChild(i)
-                   status.innerHTML = "Approved" ;
-                   status.appendChild(icon);
-                   console.log(status);  */
+                   status.innerHTML = "Approved " + `<i class="fa fa-check-circle"></i>`;  
                })
             }
         }
     }
+
+    //tooltip functionality
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+})

@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a, a:hover {
+    color: white;
+    text-decoration: none;
+}
+.loginSection{
+    height: 100vh;
+    background-image: url("C:/Users/Emeka Chinye/Documents/Visual Studio Code/Projects/Birthday Dashboard/images/slide12.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(1, 27, 75, 0.938);
+    background-blend-mode: soft-light; 
+    color: white;
+}
+.content{
+    justify-self: center;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
