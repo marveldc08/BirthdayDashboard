@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard02</title>
     <!-- Bootstrap-->
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Common Plugins CSS -->
     <link href="css/admin/plugins/plugins.css" rel="stylesheet">
     <!--fonts-->
     <link href="lib/line-icons/line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="lib/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link href="lib/dt-picker/jquery.datetimepicker.min.css" rel="stylesheet">
@@ -20,7 +21,7 @@
     <link href="css/admin/picker-custom.css" rel="stylesheet" />
     <link href="css/admin/select2-custom.css" rel="stylesheet">
     <link href="css/admin/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin/dashboard01.css">
+    <link rel="stylesheet" href="css/admin/dashboards.css">
        
 </head>
 <body>
@@ -45,11 +46,11 @@
                                 <ul aria-expanded="false">
                                     <li >
                                         <span class="nav-thumbnail">01</span>
-                                        <a href="index.html">Birthday Challenge</a>
+                                        <a href="dashboard01.html" data-bs-toggle="tooltip" data-bs-placement="right"  title="Birthday Challenge">Birthday Challenge</a>
                                     </li>
                                     <li class="active">
                                         <span class="nav-thumbnail">02</span>
-                                        <a href="dashboard02.html">Feed A Child Challenge</a>
+                                        <a href="dashboard02.html" data-bs-toggle="tooltip" data-bs-placement="right"  title="Feed A Child Challenge">Feed A Child Challenge</a>
                                     </li>
                                 </ul>
                             </li><!--Menu-item-->
@@ -94,7 +95,7 @@
                                 <span class="fs12 mb-0 text-muted">Administrator</span>
                             </div>
                             
-                            <a class="dropdown-item" href="page-login.html"><i class="icon-Power"></i> logout</a>
+                            <a class="dropdown-item" href="index.html"><i class="icon-Power"></i> logout</a>
 
                         </div>
                     </li>
@@ -291,7 +292,7 @@
                                         <th>Date</th>
                                         <th>Amount</th>
                                         <th>Status</th>
-                                        <th>Verify Givings</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -301,7 +302,7 @@
                                         <td id="church1">CE Fifth Avenue</td>
                                         <td id="phone1">09012345678</td>
                                         <td id="content1">Exampleson@gmail.com</td>
-                                        <td id="date1">Thusrday 24th 12:23pm</td>
+                                        <td id="date1">October 24th</td>
                                         <td id="td1">NG 12,000.00</td>
                                         <td id="status1">
                                             Pending 
@@ -310,7 +311,9 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-success table " id="btn1">Verify</button>
+                                            <span>
+                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr id="tr2">
@@ -319,7 +322,7 @@
                                         <td id="church2">CE Alasia</td>
                                         <td id="phone2">09012335678</td>
                                         <td id="content2"> bech09@gmail.com</td>
-                                        <td id="date2">Monday 14th 3:00pm</td>
+                                        <td id="date2">October 14th</td>
                                         <td id="td2">NG 23,000.00</td>
                                         <td id="status2">
                                             Pending 
@@ -328,7 +331,9 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-success table">Verify</button>
+                                            <span>
+                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -337,7 +342,7 @@
                                         <td id="church3">CE Abebi</td>
                                         <td id="phone3">09012345678</td>
                                         <td id="content3">samson@gmail.com</td>
-                                        <td id="date3">Friday 12th 9:26am</td>
+                                        <td id="date3">October 12th</td>
                                         <td id="td3">NG 8000.00</td>
                                         <td id="status3">
                                             Pending 
@@ -346,7 +351,9 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-success table">Verify</button>
+                                            <span>
+                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr id="tr4">
@@ -355,7 +362,7 @@
                                         <td id="church4">CE Central Church</td>
                                         <td id="phone4">09012345678</td>
                                         <td id="content4">thomason@gmail</td>
-                                        <td id="data4">Thusrday 14th 11:23pm</td>
+                                        <td id="data4">October 14th</td>
                                         <td id="td4">NG 45,000.00</td>
                                         <td id="status4">
                                             Pending 
@@ -364,7 +371,9 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-success table">Verify</button>
+                                            <span>
+                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr id="tr5">
@@ -373,7 +382,7 @@
                                         <td id="church5">CE  Casso</td>
                                         <td id="phone5">09012345678</td>
                                         <td id="content5">peace12@gmail.com</td>
-                                        <td id="date5">Thusrday 24th 12:23pm</td>
+                                        <td id="date5">October 24th</td>
                                         <td id="td5">NG 100,000 000.00</td>
                                         <td id="status5">
                                             Pending 
@@ -382,7 +391,9 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-success table">Verify</button>
+                                            <span>
+                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr id="tr6">
@@ -391,7 +402,7 @@
                                         <td id="church6">CE New Estate</td>
                                         <td id="phone6">09012345678</td>
                                         <td id="content6">janebeach@gmailcom</td>
-                                        <td id="date6">Wednesday 10th 7:00pm</td>
+                                        <td id="date6">October 10th </td>
                                         <td id="td6">NG 90,000.00</td>
                                         <td id="status6">
                                             Pending 
@@ -400,7 +411,9 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-success table">Verify</button>
+                                            <span>
+                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr id="tr7">
@@ -409,7 +422,7 @@
                                         <td id="church7">CE AIT</td>
                                         <td id="phone7">09012345678</td>
                                         <td id="content7">stephenchidi09@gmail.com</td>
-                                        <td id="date7">Satruday 19th 12:00am</td>
+                                        <td id="date7">October 19th</td>
                                         <td id="td7">NG 34,000.00</td>
                                         <td id="status7">
                                             Pending 
@@ -418,7 +431,9 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-success table">Verify</button>
+                                            <span>
+                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                            </span>
                                         </td>
                                     </tr>
 
@@ -426,13 +441,13 @@
                             </table>
 
                             <!--modal section-->
-                           <!--  <section id="modal-section">
+                             <section id="modal-section">
                                 <div class="modal fade" id="contentModal">
                                     <div class="modal-dialog modal-dialog centered modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                  <h4 class="modal-title text-white">
-                                                    Content Rating
+                                                    Verify Giving
                                                 </h4> 
                                                 <span class="close" data-dismiss="modal">&times;</span>
                                             </div>
@@ -454,29 +469,26 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-12 contain">
-                                                        <video src="video/People in prison_TrueSouth.mp4" width="100%" controls></video>
-                                                        <audio src="audio/Blanca - Who I am.mp3" class="hide" controls></audio>
-                                                        <p>Birthday Challenge <span id="contentType"></span></p>
+                                                       <!--  <video src="video/People in prison_TrueSouth.mp4" width="100%" controls></video>
+                                                        <audio src="audio/Blanca - Who I am.mp3" class="hide" controls></audio> -->
+                                                        <p>Feed A Child Challenge <span id="contentType"></span></p>
                                                     </div>
+                                                    
                                                     <div class="col-md-12">
-                                                        <h5>Rate Content</h5>
-                                                        <div class="slidecontainer">
-                                                            <input type="range" min="0" max="100" value="0" class="slider" id="Range">
-                                                        </div>
+                                                        <h5>Giving: <span id="Output"></span></h5>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <h6>Rating: <span id="Output"></span>%</h6>
-                                                    </div>
-                                                    <div class="col-md-6">
+                                                    <!-- <div class="col-md-6">
                                                         <span class="fa fa-star" id="star1"></span>
                                                         <span class="fa fa-star" id="star2"></span>
                                                         <span class="fa fa-star" id="star3"></span>
                                                         <span class="fa fa-star" id="star4"></span>
                                                         <span class="fa fa-star" id="star5"></span>
-                                                    </div>
+                                                    </div> -->
                                                     <div class="row">
-                                                        <div class="col-md-6 ml-2 mt-4 mb-4">
-                                                            <button class="btn btn-outline-success btn-lg" id="approveBtn"><i class="fa fa-check"></i> Approve</button>
+                                                        <div class="col-md-12 ml-3 mt-4 mb-4 divBtn">
+                                                            <button class="btn btn-outline-success btn-lg mr-3" id="verifyBtn"><i class="fa fa-check"></i> Verify</button>
+
+                                                            <button class="btn btn-outline-danger btn-lg ml-3" id="declineBtn"><i class="fa fa-times"></i> Decline</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -487,7 +499,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </section> -->
+                            </section> 
 
                         </div>
                     </div>
