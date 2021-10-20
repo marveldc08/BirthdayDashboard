@@ -31,24 +31,49 @@
              let fullName =  rowSelected.cells[1].innerHTML;
              let church =  rowSelected.cells[2].innerHTML;
              let phoneNumber =  rowSelected.cells[3].innerHTML;
-             let contentType =  rowSelected.cells[4].innerHTML;
+             let email =  rowSelected.cells[4].innerHTML;
              let date =  rowSelected.cells[5].innerHTML;
-             let rating =  rowSelected.cells[6];
+             let giving =  rowSelected.cells[6].innerHTML;
              let status =  rowSelected.cells[7];
+
+             let modalName = document.querySelector('#modalName');
+             let content = document.querySelector('#contentType');
+             let modalChurch = document.querySelector('#modalChurch');
+             let modalVideo = document.querySelector('video');
+             let modalAudio = document.querySelector('audio');
             
-                const approve = document.querySelector('.table');
-                approve.addEventListener('click',function () {
-                    let iconClass= 'fa fa-checked-circle';
-                    let icon = `<span>
-                                    <i class = '${iconClass}' ></i>
-                                </span>`;
-                    status.textContent = "Verified";
-                    /* status.appendChild(icon); */
+             let amount = document.querySelector('#Output');
+
+             modalName.innerHTML = title + " " + fullName;
+             modalChurch.innerHTML = church;
+             amount.innerHTML = giving;
+
+                 const verify = document.querySelector('#verifyBtn');
+                 verify.setAttribute('data-dismiss', 'modal');
+                 verify.addEventListener('click',function () {
+                    status.innerHTML = "Verified " + `<i class="fa fa-check-circle"></i>`;
                 })
-                let arr = [];
-            arr.push(church.textContent);
-            console.log(arr);
+
+                const decline = document.querySelector('#declineBtn');
+                decline.setAttribute('data-dismiss', 'modal');
+                decline.addEventListener('click',function () {
+                   status.innerHTML = "Declined " + `<i class="fa fa-times-circle"></i>`;
+               })
+
+               if(status.textContent == "Verified"){
+                   verify.setAttribute('disabled','disabled')
+                   decline.removeAttribute('disabled', 'disabled')
+               }else if (status.textContent == "Declined"){
+                   decline.setAttribute('disabled', 'disabled')
+                   verify.removeAttribute('disabled', 'disabled')
+               }
             } 
             
         }
     }
+
+     //tooltip functionality
+     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+     return new bootstrap.Tooltip(tooltipTriggerEl)
+     })
