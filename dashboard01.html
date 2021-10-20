@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard01</title>
     <!-- Bootstrap-->
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Common Plugins CSS -->
     <link href="css/admin/plugins/plugins.css" rel="stylesheet">
     <!--fonts-->
     <link href="lib/line-icons/line-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="lib/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link href="lib/dt-picker/jquery.datetimepicker.min.css" rel="stylesheet">
@@ -20,7 +21,7 @@
     <link href="css/admin/picker-custom.css" rel="stylesheet" />
     <link href="css/admin/select2-custom.css" rel="stylesheet">
     <link href="css/admin/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/admin/dashboard01.css">
+    <link rel="stylesheet" href="css/admin/dashboards.css">
        
 </head>
 <body>
@@ -45,11 +46,11 @@
                                 <ul aria-expanded="false">
                                     <li class="active">
                                         <span class="nav-thumbnail">01</span>
-                                        <a href="index-01.html">Birthday Challenge</a>
+                                        <a href="index-01.html" data-bs-toggle="tooltip" data-bs-placement="right"  title="Birthday Challenge">Birthday Challenge</a>
                                     </li>
                                     <li >
                                         <span class="nav-thumbnail">02</span>
-                                        <a href="dashboard02.html">Feed A Child Challenge</a>
+                                        <a href="dashboard02.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Feed A Child Challenge" >Feed A Child Challenge</a>
                                     </li>
                                 </ul>
                             </li><!--Menu-item-->
@@ -94,7 +95,7 @@
                                 <span class="fs12 mb-0 text-muted">Administrator</span>
                             </div>
                             
-                            <a class="dropdown-item" href="page-login.html"><i class="icon-Power"></i> logout</a>
+                            <a class="dropdown-item" href="index.html"><i class="icon-Power"></i> logout</a>
 
                         </div>
                     </li>
@@ -289,7 +290,7 @@
                                         <th>Full Name</th>
                                         <th>Church</th>
                                         <th>Phone Number</th>
-                                        <th>Content Type</th>
+                                        <th>Content</th>
                                         <th>Date</th>
                                         <th>Rating</th>
                                         <th>Status</th>
@@ -303,7 +304,7 @@
                                         <td id="church1">CE Fifth Avenue</td>
                                         <td id="phone1">09012345678</td>
                                         <td id="content1">Audio</td>
-                                        <td id="date1">Thusrday 24th 12:23pm</td>
+                                        <td id="date1">October 24th</td>
                                         <td id="td1"></td>
                                         <td id="status1">
                                             Pending 
@@ -312,7 +313,7 @@
                                             </span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-primary tableBtn"data-toggle="modal" data-target="#contentModal" id="btn1" >View</button>
+                                            <button class="btn btn-primary tableBtn"data-toggle="modal" data-target="#contentModal" id="btn1">View</button>
                                         </td>
                                     </tr>
                                     <tr id="tr2">
@@ -321,7 +322,7 @@
                                         <td id="church2">CE Alasia</td>
                                         <td id="phone2">09012335678</td>
                                         <td id="content2"> Video</td>
-                                        <td id="date2">Monday 14th 3:00pm</td>
+                                        <td id="date2">October 14th</td>
                                         <td id="td2"></td>
                                         <td id="status2">
                                             Pending 
@@ -339,7 +340,7 @@
                                         <td id="church3">CE Abebi</td>
                                         <td id="phone3">09012345678</td>
                                         <td id="content3">Audio</td>
-                                        <td id="date3">Friday 12th 9:26am</td>
+                                        <td id="date3">October 12th</td>
                                         <td id="td3"></td>
                                         <td id="status3">
                                             Pending 
@@ -357,7 +358,7 @@
                                         <td id="church4">CE Central Church</td>
                                         <td id="phone4">09012345678</td>
                                         <td id="content4">Video</td>
-                                        <td id="data4">Thusrday 14th 11:23pm</td>
+                                        <td id="data4">October 14th</td>
                                         <td id="td4"></td>
                                         <td id="status4">
                                             Pending 
@@ -375,7 +376,7 @@
                                         <td id="church5">CE  Casso</td>
                                         <td id="phone5">09012345678</td>
                                         <td id="content5">Audio</td>
-                                        <td id="date5">Thusrday 24th 12:23pm</td>
+                                        <td id="date5">October 24th </td>
                                         <td id="td5"></td>
                                         <td id="status5">
                                             Pending 
@@ -393,7 +394,7 @@
                                         <td id="church6">CE New Estate</td>
                                         <td id="phone6">09012345678</td>
                                         <td id="content6">Audio</td>
-                                        <td id="date6">Wednesday 10th 7:00pm</td>
+                                        <td id="date6">October 10th</td>
                                         <td id="td6"></td>
                                         <td id="status6">
                                             Pending 
@@ -411,7 +412,7 @@
                                         <td id="church7">CE AIT</td>
                                         <td id="phone7">09012345678</td>
                                         <td id="content7">Video</td>
-                                        <td id="date7">Satruday 19th 12:00am</td>
+                                        <td id="date7">October 19th</td>
                                         <td id="td7"></td>
                                         <td id="status7">
                                             Pending 
@@ -449,7 +450,7 @@
                                                     <div class="col-md-10">
                                                         <div class="nameChurch">
                                                             <span class="particpantName" id="modalName"></span>
-                                                            <p >From <span id="modalChurch"></span></p>
+                                                            <p>From <span id="modalChurch"></span></p>
                                                         </div>
                                                     </div>
                                                     
