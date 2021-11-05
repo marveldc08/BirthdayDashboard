@@ -52,6 +52,10 @@
                                         <span class="nav-thumbnail">02</span>
                                         <a href="dashboard02.html" data-bs-toggle="tooltip" data-bs-placement="right"  title="Feed A Child Challenge">Feed A Child Challenge</a>
                                     </li>
+                                    <li>
+                                        <span class="nav-thumbnail">03</span>
+                                        <a href="dashboard03.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Shout Out" >Shout Out</a>
+                                    </li>
                                 </ul>
                             </li><!--Menu-item-->
                         </ul>
@@ -138,7 +142,7 @@
                             </div>
                         </div> -->
                         
-                        <div class="col-lg-6 mb-6 col-md-6 mb-30">
+                        <div class="col-lg-4 mb-6 col-md-4 mb-30">
                             <div class="list border1 rounded overflow-hidden bg-white">
                                 <div class="list-item">
                                     <div class="list-thumb bg-info-active text-warning-light avatar rounded-circle avatar60 shadow-sm">
@@ -152,35 +156,35 @@
                             </div>
                         </div><!--col-->
                        
-                        <div class="col-lg-6 mb-6 col-md-6  mb-30">
+                        <div class="col-lg-4 mb-6 col-md-4  mb-30">
                             <div class="list border1 rounded overflow-hidden bg-white">
                                 <div class="list-item">
                                     <div class="list-thumb bg-success-active text-success-light avatar rounded-circle avatar60 shadow-sm">
                                         <i class="icon-Bank"></i>
                                     </div>
                                     <div class="list-body text-right">
-                                        <span class="list-title fs-2x">30</span>
+                                        <span class="list-title fs-2x">340</span>
                                         <span class="list-content fs14">Verified Givings </span>
 
                                     </div>
                                 </div>
                             </div>
                         </div><!--col-->
-                        <!-- <div class="col-lg-3 mb-6 col-md-6 mb-30">
+                        <div class="col-lg-4 mb-6 col-md-4 mb-30">
                             <div class="list border1 rounded overflow-hidden bg-white">
                                 <div class="list-item">
                                     <div class="list-thumb bg-danger-active text-danger-light avatar rounded-circle avatar60 shadow-sm">
-                                        <i class="icon-Delete"></i>
-                                        <i class="lni lni-close"></i>
+                                        <!-- <i class="fa fa-times"></i> -->
+                                         <i class="lni lni-close" id="lniClose"></i> 
                                     </div>
                                     <div class="list-body text-right">
-                                        <span class="list-title fs-2x">78</span>
-                                        <span class="list-content  fs14">Declined</span>
+                                        <span class="list-title fs-2x">3</span>
+                                        <span class="list-content  fs14">Declined Givings</span>
 
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div> 
                     </div>
                     <div class="row" hidden>
                         <div class="col-lg-8">
@@ -287,10 +291,11 @@
                                         <th>Title</th>
                                         <th>Full Name</th>
                                         <th>Church</th>
-                                        <th>Phone Number</th>
+                                        <th>Phone</th>
                                         <th>Email</th>
                                         <th>Date</th>
                                         <th>Amount</th>
+                                        <th>Code</th>
                                         <th>Status</th>
                                         <th></th>
                                     </tr>
@@ -304,6 +309,7 @@
                                         <td id="content1">Exampleson@gmail.com</td>
                                         <td id="date1">October 24th</td>
                                         <td id="td1">NG 12,000.00</td>
+                                        <td id="code1">7A43DE</td>
                                         <td id="status1">
                                             Pending 
                                             <span>
@@ -312,7 +318,7 @@
                                         </td>
                                         <td>
                                             <span>
-                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                                <i class="fas fa-ellipsis-v table" id="elip1" data-toggle="modal" data-target="#contentModal"></i>
                                             </span>
                                         </td>
                                     </tr>
@@ -324,6 +330,7 @@
                                         <td id="content2"> bech09@gmail.com</td>
                                         <td id="date2">October 14th</td>
                                         <td id="td2">NG 23,000.00</td>
+                                        <td id="code2">6E28DA</td>
                                         <td id="status2">
                                             Pending 
                                             <span>
@@ -332,7 +339,7 @@
                                         </td>
                                         <td>
                                             <span>
-                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                                <i class="fas fa-ellipsis-v table" id="elip2" data-toggle="modal" data-target="#contentModal"></i>
                                             </span>
                                         </td>
                                     </tr>
@@ -344,6 +351,7 @@
                                         <td id="content3">samson@gmail.com</td>
                                         <td id="date3">October 12th</td>
                                         <td id="td3">NG 8000.00</td>
+                                        <td id="code3">8B56SD</td>
                                         <td id="status3">
                                             Pending 
                                             <span>
@@ -352,7 +360,7 @@
                                         </td>
                                         <td>
                                             <span>
-                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                                <i class="fas fa-ellipsis-v table" id="elip3" data-toggle="modal" data-target="#contentModal"></i>
                                             </span>
                                         </td>
                                     </tr>
@@ -364,6 +372,7 @@
                                         <td id="content4">thomason@gmail</td>
                                         <td id="data4">October 14th</td>
                                         <td id="td4">NG 45,000.00</td>
+                                        <td id="code4">1G03SV</td>
                                         <td id="status4">
                                             Pending 
                                             <span>
@@ -372,7 +381,7 @@
                                         </td>
                                         <td>
                                             <span>
-                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                                <i class="fas fa-ellipsis-v table" id="elip4" data-toggle="modal" data-target="#contentModal"></i>
                                             </span>
                                         </td>
                                     </tr>
@@ -384,6 +393,7 @@
                                         <td id="content5">peace12@gmail.com</td>
                                         <td id="date5">October 24th</td>
                                         <td id="td5">NG 100,000 000.00</td>
+                                        <td id="code5">7D13RT</td>
                                         <td id="status5">
                                             Pending 
                                             <span>
@@ -392,7 +402,7 @@
                                         </td>
                                         <td>
                                             <span>
-                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                                <i class="fas fa-ellipsis-v table" id="elip5" data-toggle="modal" data-target="#contentModal"></i>
                                             </span>
                                         </td>
                                     </tr>
@@ -404,6 +414,7 @@
                                         <td id="content6">janebeach@gmailcom</td>
                                         <td id="date6">October 10th </td>
                                         <td id="td6">NG 90,000.00</td>
+                                        <td id="code6">4A72DF</td>
                                         <td id="status6">
                                             Pending 
                                             <span>
@@ -412,7 +423,7 @@
                                         </td>
                                         <td>
                                             <span>
-                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                                <i class="fas fa-ellipsis-v table" id="elip6" data-toggle="modal" data-target="#contentModal"></i>
                                             </span>
                                         </td>
                                     </tr>
@@ -424,6 +435,7 @@
                                         <td id="content7">stephenchidi09@gmail.com</td>
                                         <td id="date7">October 19th</td>
                                         <td id="td7">NG 34,000.00</td>
+                                        <td id="code7">7A89CE</td>
                                         <td id="status7">
                                             Pending 
                                             <span>
@@ -432,13 +444,22 @@
                                         </td>
                                         <td>
                                             <span>
-                                                <i class="fas fa-ellipsis-v table" data-toggle="modal" data-target="#contentModal"></i>
+                                                <i class="fas fa-ellipsis-v table" id="elip7" data-toggle="modal" data-target="#contentModal"></i>
                                             </span>
                                         </td>
                                     </tr>
 
                                 </tbody>
                             </table>
+                            <div class="container">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Prev</a></li>
+                                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+                                </ul>
+                            </div>
 
                             <!--modal section-->
                              <section id="modal-section">
@@ -520,7 +541,8 @@
 
 
     <script type="text/javascript" src="js/admin/plugins/plugins.js"></script> 
-    <script type="text/javascript" src="js/admin/appUi-custom.js"></script> 
+    <script type="text/javascript" src="js/admin/appUi-custom.js"></script>
+    <script src="ttps://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
      <script src="lib/chartist/chartist.min.js"></script>
     <script src="lib/chartist/chartist-tooltip.js"></script>
     <script type="text/javascript" src="lib/peity/jquery.peity.min.js"></script>
