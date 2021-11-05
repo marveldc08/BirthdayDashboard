@@ -75,7 +75,7 @@ valueOutput.innerHTML= slider.value;
 
                 slider.oninput = function(){
                     valueOutput.innerHTML = this.value;
-                    rating.textContent = slider.value + "%";
+                    rating.innerHTML = slider.value + "%";
 
                     //add color to stars
                     if(slider.value <= 19){

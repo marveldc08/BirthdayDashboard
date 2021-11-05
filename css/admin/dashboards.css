@@ -2,6 +2,10 @@
     font-size: small;
     color: green;
 }
+.fa-check-circle2{
+    font-size: small;
+    color: blue;
+}
 .fa-times-circle{
     font-size: small;
     color: red;
@@ -20,7 +24,7 @@
     font-size: x-large; */
 }
 
-/*Rating Slide*/
+/*Rating Slide for dashboard01.html start*/
 .slidecontainer{
     width: 100%;
 }
@@ -43,7 +47,9 @@ height: 15px;
 border-radius: 50%;
 cursor: pointer;
 background: #1072CE;
-}
+}/*Rating Slide for dashboard01.html end*/
+
+
 .close{
     font-size: 18px;
     color: white;
@@ -72,4 +78,7 @@ background: #1072CE;
 }
 .hide{
     display: none;
+}
+#lniClose{
+    font-size:7px;
 }
